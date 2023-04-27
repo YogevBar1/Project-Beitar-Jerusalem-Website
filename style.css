@@ -1,0 +1,117 @@
+section.layout {
+    height: 100%;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+
+    /* I make here a fixed height for the header and footer and automate height for the menu,
+    because sometimes a lot of text or images located there  */
+     grid-template-rows:80px auto 50px;
+    
+}
+
+
+html, body {
+    background-image: linear-gradient(5deg, white, rgb(240, 243, 96));
+    margin: 0;
+    text-align: center;
+    font-size: medium;
+}
+
+header{
+    grid-column: span 5;
+    font-size: x-large;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+
+main > img {
+    /* Design the image in the main (all pages)*/
+    width: 400px;
+    height: 250px;
+    padding-top: 2px;
+
+    
+}
+
+footer {
+    /* Design the Copyrights area */
+    grid-column: span 5;
+    font-size: x-large;
+    padding-top: 10px;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    grid-column: span 1;
+}
+
+
+
+header,
+nav,
+footer {
+    border: 1px solid;
+}
+
+.logo{
+   /* Styling the logo image: */
+     /* padding:  10px 50px 20px 50px;  */
+     padding-left: 50px;
+     padding-right: 50px;
+
+
+    height: 50px;
+}
+
+a{
+    /* Color of the links */
+    color:black;
+    font-size: x-large;
+   
+}
+
+a:hover{
+    /*Changes when i hovering above the links */
+
+
+    /* Color of the link  */
+    color:peru;
+
+    /* The font of the link will grow */
+    font-size: 30px;
+}
+
+
+
+  main{
+    
+    grid-column: span 4;
+    padding-bottom: 25px;
+
+
+  }
+
+  main >p {
+    padding: 5px 50px 10px 50px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: large;
+  }
+
+
+  /* Styling the unorder/order lists in the main */
+  main > ol, ul{
+    
+    text-align:left;
+  }
+
+  /* Styling the titles in trophies page */
+  .trophiesTitles{
+    text-align:left;
+    padding-left: 15px;
+  }
