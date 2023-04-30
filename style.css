@@ -6,19 +6,20 @@ section.layout {
 
     /* I make here a fixed height for the header and footer and automate height for the menu,
     because sometimes a lot of text or images located there  */
-     grid-template-rows:80px auto 50px;
-    
+    grid-template-rows: 80px auto 50px;
+
 }
 
 
-html, body {
+html,
+body {
     background-image: linear-gradient(5deg, white, rgb(240, 243, 96));
     margin: 0;
     text-align: center;
     font-size: medium;
 }
 
-header{
+header {
     grid-column: span 5;
     font-size: x-large;
     font-weight: bold;
@@ -29,13 +30,13 @@ header{
 
 
 
-main > img {
+main>img {
     /* Design the image in the main (all pages)*/
     width: 400px;
     height: 250px;
     padding-top: 2px;
 
-    
+
 }
 
 footer {
@@ -59,29 +60,29 @@ footer {
     border: 1px solid;
 }
 
-.logo{
-   /* Styling the logo image: */
-     /* padding:  10px 50px 20px 50px;  */
-     padding-left: 50px;
-     padding-right: 50px;
+.logo {
+    /* Styling the logo image: */
+    /* padding:  10px 50px 20px 50px;  */
+    padding-left: 50px;
+    padding-right: 50px;
 
 
     height: 50px;
 }
 
-a{
+a {
     /* Color of the links */
-    color:black;
+    color: black;
     font-size: x-large;
-   
+
 }
 
-a:hover{
+a:hover {
     /*Changes when i hovering above the links */
 
 
     /* Color of the link  */
-    color:peru;
+    color: peru;
 
     /* The font of the link will grow */
     font-size: 30px;
@@ -89,29 +90,90 @@ a:hover{
 
 
 
-  main{
-    
+main {
+
     grid-column: span 4;
     padding-bottom: 25px;
 
 
-  }
+}
 
-  main >p {
+main>p {
     padding: 5px 50px 10px 50px;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: large;
-  }
+}
 
 
-  /* Styling the unorder/order lists in the main */
-  main > ol, ul{
-    
-    text-align:left;
-  }
+/* Styling the unorder/order lists in the main */
+main>ol,
+ul {
 
-  /* Styling the titles in trophies page */
-  .trophiesTitles{
-    text-align:left;
+    text-align: left;
+}
+
+/* Styling the titles in trophies page */
+.trophiesTitles {
+    text-align: left;
     padding-left: 15px;
+}
+
+table {
+    border: 5px solid;
+}
+
+.carousel-item img {
+    /*Adapts the image to the site:  */
+    padding: 2% 15% 15% 15%; 
+
+
+}
+
+.carousel-item h5 {
+    color: rgb(255, 0, 195);
+    font-size: x-large;
+   
+   
+}
+
+
+/* Styling Teddy page: */
+.row > div{
+    height: 60px;
+    font-size: small;
+    text-align: center;
+   
+}
+
+.row > div:nth-child(1){
+    background-color: yellow;
+}
+
+.row > div:nth-child(2){
+    background-color: white;
+}
+
+.row > div:nth-child(3){
+    background-color: rgb(19, 227, 255);
+}
+
+.row > div:nth-child(4){
+    background-color: rgb(115, 255, 45);
+}
+
+.logos-row {
+    justify-content: center;
+    
   }
+
+  .logos-img{
+    width: 100px;
+    height: 100px;
+    margin: 1px;
+  }
+
+  .logos-title{
+    padding-top: 10px;
+  }
+
+ 
