@@ -73,7 +73,7 @@ footer {
 a {
     /* Color of the links */
     color: black;
-    font-size: x-large;
+    font-size: large;
 
 }
 
@@ -82,10 +82,10 @@ a:hover {
 
 
     /* Color of the link  */
-    color: peru;
+    color: rgb(52, 208, 255);
 
     /* The font of the link will grow */
-    font-size: 30px;
+    font-size: 23px;
 }
 
 
@@ -105,7 +105,7 @@ main>p {
 }
 
 
-/* Styling the unorder/order lists in the main */
+/* Styling the unordered /order lists in the main */
 main>ol,
 ul {
 
@@ -176,4 +176,59 @@ table {
     padding-top: 10px;
   }
 
+
+ /* Design the title of the home page */
+.home-title{
+   
+    width: 350px;
+    height: 100px;
+    border: 1px solid;
+    text-align: center;
+    margin: 50px 50px 50px 50px;
+
+    line-height: 100px;
+    border-radius: 50px;
+    box-shadow: 10px 7px 5px black;
+    background-image: linear-gradient(10deg, yellow, black);
+    animation: rotation 10s linear infinite;
+    transition: all 2s;
+
+
+}
+
+/* Here I design the rotate of my cool title:*/
+
+@keyframes rotation {
+    from {
+        width:350px;
+    }
+
+    to {
+        width:500px;
+    }
+}
+
+form > input{
+    background-color: yellow;
+}
+
+form > textarea {
+    background-color: yellow;
+    width: 290px;
+    height: 220px;
+}
+
+
+form{
+    text-align: left;
+    padding-left: 25px;
+    
+}
+
+
+/* Design a background image to the home page: */
+.home-page-main{
+    background-image: url("assets/images/img1.jpeg");
  
+}
+
